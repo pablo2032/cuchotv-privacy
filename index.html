@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cucho IPTV Player — Política de Privacidad / Privacy Policy</title>
+  <link rel="icon" type="image/png" href="icon.png" />
+  <meta name="description" content="Política de privacidad oficial para la aplicación Cucho IPTV Player: Live & Cast. 100% privado, almacenamiento local y sin rastreo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-main: #0a0e17;
+      --bg-surface: #111827;
+      --bg-card: #172033;
+      --border-subtle: #232f48;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --accent-primary: #38bdf8;
+      --accent-secondary: #818cf8;
+      --accent-gradient: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+      --success: #34d399;
+      --warning: #fbbf24;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-primary);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      font-size: 16px;
+      padding-bottom: 60px;
+      background-image: 
+        radial-gradient(circle at 15% 10%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 60%, rgba(129, 140, 248, 0.08) 0%, transparent 45%);
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border-subtle);
+      margin-bottom: 40px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .brand-title {
+      font-weight: 700;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-subtitle {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      display: block;
+    }
+
+    /* Language Switcher */
+    .lang-switcher {
+      display: inline-flex;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 9999px;
+      padding: 4px;
+      gap: 2px;
+    }
+
+    .lang-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .lang-btn:hover {
+      color: var(--text-primary);
+    }
+
+    .lang-btn.active {
+      background: var(--accent-gradient);
+      color: #0a0e17;
+      box-shadow: 0 2px 8px rgba(56, 189, 248, 0.3);
+    }
+
+    /* Header Hero */
+    .hero {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: var(--accent-primary);
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: 2.3rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-meta {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    /* Feature Highlights */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+
+    .highlight-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .highlight-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent-primary);
+    }
+
+    .highlight-icon {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    .highlight-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: var(--text-primary);
+    }
+
+    .highlight-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Content Card */
+    .content-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--shadow);
+    }
+
+    .section {
+      margin-bottom: 32px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent-primary);
+      font-size: 0.85rem;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .section p {
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+    }
+
+    .section ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 12px 0;
+    }
+
+    .section li {
+      position: relative;
+      padding-left: 24px;
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+    }
+
+    .section li::before {
+      content: "•";
+      position: absolute;
+      left: 6px;
+      color: var(--accent-primary);
+      font-weight: bold;
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+
+    .section strong {
+      color: var(--text-primary);
+    }
+
+    .code-badge {
+      display: inline-block;
+      background: rgba(148, 163, 184, 0.1);
+      border: 1px solid var(--border-subtle);
+      border-radius: 4px;
+      padding: 2px 6px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      color: var(--accent-primary);
+    }
+
+    /* Disclaimer Card */
+    .callout-warning {
+      background: rgba(251, 191, 36, 0.08);
+      border: 1px solid rgba(251, 191, 36, 0.3);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      margin: 24px 0;
+    }
+
+    .callout-warning-title {
+      font-weight: 700;
+      color: var(--warning);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1rem;
+    }
+
+    .callout-warning p {
+      font-size: 0.9rem;
+      color: #e2e8f0;
+      margin: 0;
+    }
+
+    /* Developer Card */
+    .dev-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .dev-info h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .dev-info p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid var(--accent-primary);
+      color: var(--accent-primary);
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: all 0.2s ease;
+    }
+
+    .contact-btn:hover {
+      background: var(--accent-primary);
+      color: #0a0e17;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--accent-primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Language hiding helper */
+    .lang-en {
+      display: none;
+    }
+
+    @media (max-width: 640px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      .content-box {
+        padding: 22px;
+      }
+      .top-bar {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+      }
+      .lang-switcher {
+        align-self: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Top Bar -->
+    <header class="top-bar">
+      <a href="#" class="brand">
+        <img src="icon.png" alt="Cucho IPTV Player Logo" class="brand-icon" />
+        <div>
+          <span class="brand-title">Cucho IPTV Player</span>
+          <span class="brand-subtitle">Live &amp; Cast • Android &amp; Android TV</span>
+        </div>
+      </a>
+      <div class="lang-switcher" role="group" aria-label="Seleccionar idioma / Select language">
+        <button id="btnEs" class="lang-btn active" onclick="setLang('es')">
+          <span>🇪🇸</span> Español
+        </button>
+        <button id="btnEn" class="lang-btn" onclick="setLang('en')">
+          <span>🇺🇸</span> English
+        </button>
+      </div>
+    </header>
+
+    <!-- SPANISH CONTENT -->
+    <div id="content-es" class="lang-es">
+      <div class="hero">
+        <div class="badge-pill">
+          <span>🛡️</span> Conforme a las Políticas de Google Play • v1.1
+        </div>
+        <h1>Política de Privacidad</h1>
+        <p class="hero-meta">
+          <strong>Cucho IPTV Player: Live &amp; Cast</strong> • Última actualización: 16 de septiembre de 2026
+        </p>
+      </div>
+
+      <!-- Quick Badges -->
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <span class="highlight-icon">🔒</span>
+          <div class="highlight-title">100% Local</div>
+          <div class="highlight-desc">Tus datos nunca salen de tu dispositivo</div>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">🚫</span>
+          <div class="highlight-title">Sin Anuncios</div>
+          <div class="highlight-desc">Cero publicidad invasiva o de terceros</div>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">🛡️</span>
+          <div class="highlight-title">Sin Rastreo</div>
+          <div class="highlight-desc">No recolectamos analíticas ni vendemos datos</div>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">💳</span>
+          <div class="highlight-title">Google Play Billing</div>
+          <div class="highlight-desc">Donaciones 100% seguras y oficiales</div>
+        </div>
+      </div>
+
+      <!-- Main Policy Box -->
+      <main class="content-box">
+        <!-- 1. Naturaleza -->
+        <section class="section">
+          <h2 class="section-title"><span class="section-num">1</span> Naturaleza de la Aplicación</h2>
+          <p>
+            <strong>Cucho IPTV Player: Live &amp; Cast</strong> (en adelante, la "Aplicación") desarrollada por <strong>Cucho Studio</strong> ("nosotros") es estrictamente una herramienta de software y reproductor multimedia diseñado para decodificar y visualizar flujos de video provistos directamente por el propio usuario final a través de credenciales de API Xtream Codes o listas en formato M3U.
+          </p>
+          <div class="callout-warning">
+            <div class="callout-warning-title">⚠️ Aviso Legal y Derechos de Autor</div>
+            <p>
+              La Aplicación <strong>NO</strong> suministra, aloja, distribuye, retransmite ni facilita ningún canal de televisión, transmisión deportiva, película, serie ni material multimedia protegido por derechos de autor. Los desarrolladores no mantenemos relación comercial, afiliación ni vínculo con ningún proveedor de contenidos IPTV de terceros. Es responsabilidad exclusiva del usuario disponer de los derechos legítimos sobre el contenido reproducido.
+            </p>
+          </div>
+        </section>
+
+        <!-- 2. Información Recopilada -->
+        <section class="section">
+          <h2 class="section-title"><span class="section-num">2</span> Almacenamiento Local y Privacidad de Datos</h2>
+          <p>
+            Nos tomamos con máxima seriedad la protección de la privacidad del usuario. <strong>No recopilamos, transmitimos ni almacenamos ningún dato personal en servidores propios ni externos:</strong>
+          </p>
+          <ul>
+            <li><strong>Credenciales IPTV:</strong> La URL del servidor, usuario y contraseña ingresados por el usuario se conservan <em>única y exclusivamente en el almacenamiento local seguro y encriptado</em> del dispositivo mediante el sistema nativo de preferencias protegidas de Android.</li>
+            <li><strong>Historial y Favoritos:</strong> La lista de canales favoritos, los episodios vistos y la posición de reproducción se guardan localmente en la base de datos interna de la app en el dispositivo.</li>
+            <li><strong>Sin Registro de Cuentas:</strong> No solicitamos nombre real, documento de identidad, dirección de correo electrónico ni número de teléfono para utilizar el reproductor.</li>
+          </ul>
+        </section>
+
+        <!-- 3. Pagos y Donaciones -->
+        <section class="section">
+          <h2 class="section-title"><span class="section-num">3</span> Donaciones y Pagos Integrados</h2>
+          <p>
+            La Aplicación brinda al usuario la alternativa de realizar aportes o donaciones voluntarias para respaldar el desarrollo continuo e independiente del proyecto.
+          </p>
+          <ul>
+            <li>Las donaciones se procesan íntegra y exclusivamente a través de la pasarela oficial de facturación <strong>Google Play In-App Billing</strong>.</li>
+            <li>Ni la Aplicación ni los desarrolladores tienen acceso en ningún momento a los datos de tarjetas de crédito, cuentas bancarias ni datos financieros del usuario. Todas las operaciones se rigen por la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--accent-primary);">Política de Privacidad de Google</a>.</li>
+          </ul>
+        </section>
+
+        <!-- 4. Publicidad y Rastreo -->
+        <section class="section">
+          <h2 class="section-title"><span class="section-num">4</span> Publicidad y Rastreo</h2>
+          <ul>
+            <li><strong>Sin Publicidad:</strong> No incorporamos redes publicitarias de terceros (como AdMob, Unity, etc.) ni anuncios invasivos.</li>
+            <li><strong>Sin Telemetría Invasiva:</strong> No vendemos, comercializamos ni compartimos datos con intermediarios de datos (data brokers).</li>
+          </ul>
+        </section>
+
+        <!-- 5. Permisos de Android -->
+        <section class="section">
+          <h2 class="section-title"><span class="section-num">5</span> Permisos Solicitados y Justificación</h2>
+          <p>La Aplicación solicita únicamente los permisos técnicos indispensables requeridos por el sistema operativo Android:</p>
+          <ul>
+            <li><span class="code-badge">INTERNET</span>: Necesario para que el reproductor multimedia pueda descargar y reproducir el flujo audiovisual configurado por el usuario.</li>
+            <li><span class="code-badge">ACCESS_NETWORK_STATE</span>: Utilizado para verificar si existe una conexión activa a internet (Wi-Fi o datos móviles) antes de iniciar la reproducción.</li>
+            <li><span class="code-badge">WAKE_LOCK</span>: Utilizado para evitar que la pantalla del televisor o teléfono móvil entre en modo de reposo o apagado durante la reproducción de un video.</li>
+            <li><span class="code-badge">BILLING</span>: Requerido por la biblioteca de Google Play Billing para habilitar el menú de donaciones voluntarias dentro de la app.</li>
+          </ul>
+        </section>
+
+        <!-- 6. Enlaces a Terceros -->
+        <section class="section">
+          <h2 class="section-title"><span class="section-num">6</span> Servicios y Enlaces de Terceros</h2>
+          <p>
+            Al conectar la Aplicación con un servidor IPTV mediante credenciales Xtream Codes o enlaces M3U provistos por el usuario, el tráfico audiovisual viaja directamente entre el dispositivo del usuario y el servidor que el usuario haya indicado. Cucho Studio no supervisa, modera ni tiene acceso a las comunicaciones entre el usuario y su proveedor de IPTV.
+          </p>
+        </section>
+
+        <!-- 7. Cambios a la Política -->
+        <section class="section">
+          <h2 class="section-title"><span class="section-num">7</span> Actualizaciones de esta Política</h2>
+          <p>
+            Esta política podrá actualizarse de manera oportuna ante mejoras funcionales o adaptaciones regulatorias de las políticas de Google Play. Toda modificación será publicada de inmediato en esta página con su respectiva fecha de vigencia.
+          </p>
+        </section>
+
+        <!-- 8. Contacto -->
+        <section class="section">
+          <h2 class="section-title"><span class="section-num">8</span> Contacto del Desarrollador</h2>
+          <p>Para consultas, aclaraciones o soporte técnico relacionado con la privacidad:</p>
+          <div class="dev-box">
+            <div class="dev-info">
+              <h4>Cucho Studio • Pablo Miranda</h4>
+              <p>Desarrollador independiente de software</p>
+            </div>
+            <a href="mailto:pablo.mirandac@gmail.com" class="contact-btn">
+              <span>✉️</span> pablo.mirandac@gmail.com
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- ENGLISH CONTENT -->
+    <div id="content-en" class="lang-en">
+      <div class="hero">
+        <div class="badge-pill">
+          <span>🛡️</span> Google Play Compliant • v1.1
+        </div>
+        <h1>Privacy Policy</h1>
+        <p class="hero-meta">
+          <strong>Cucho IPTV Player: Live &amp; Cast</strong> • Last Updated: September 16, 2026
+        </p>
+      </div>
+
+      <!-- Quick Badges -->
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <span class="highlight-icon">🔒</span>
+          <div class="highlight-title">100% Local</div>
+          <div class="highlight-desc">Your credentials never leave your device</div>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">🚫</span>
+          <div class="highlight-title">No Ads</div>
+          <div class="highlight-desc">Zero third-party intrusive advertising</div>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">🛡️</span>
+          <div class="highlight-title">No Tracking</div>
+          <div class="highlight-desc">We do not track behavior or sell user data</div>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">💳</span>
+          <div class="highlight-title">Google Play Billing</div>
+          <div class="highlight-desc">100% secure official in-app donations</div>
+        </div>
+      </div>
+
+      <!-- Main Policy Box -->
+      <main class="content-box">
+        <!-- 1. Nature -->
+        <section class="section">
+          <h2 class="section-title"><span class="section-num">1</span> Nature of the Application</h2>
+          <p>
+            <strong>Cucho IPTV Player: Live &amp; Cast</strong> (hereinafter, the "Application"), developed by <strong>Cucho Studio</strong> ("we", "us", or "our"), is strictly a media playback tool designed to decode and display audio/video streams supplied directly and exclusively by the end user via Xtream Codes API credentials or M3U playlist URLs.
+          </p>
+          <div class="callout-warning">
+            <div class="callout-warning-title">⚠️ Legal Notice &amp; Copyright Disclaimer</div>
+            <p>
+              The Application does <strong>NOT</strong> host, provide, broadcast, retransmit, or distribute any television channels, live sports, movies, TV series, or any copyrighted media content. The developers have no affiliation, partnership, or commercial relationship with any third-party IPTV content provider. End users are solely responsible for ensuring they possess the lawful right to stream any content loaded into the player.
+            </p>
+          </div>
+        </section>
+
+        <!-- 2. Data Collection -->
+        <section class="section">
+          <h2 class="section-title"><span class="section-num">2</span> Local Storage &amp; Data Privacy</h2>
+          <p>
+            We take your privacy with the utmost seriousness. <strong>We do not collect, transmit, or store any personal data on external or proprietary servers:</strong>
+          </p>
+          <ul>
+            <li><strong>IPTV Credentials:</strong> Server URLs, usernames, and passwords entered by the user are stored <em>solely and securely on the local device</em> using Android's native encrypted preferences.</li>
+            <li><strong>History &amp; Favorites:</strong> Favorited channels, playback resume positions, and watch history are stored strictly in the local app database on the user's device.</li>
+            <li><strong>No Account Registration:</strong> We do not require usernames, passwords, phone numbers, or email addresses to use the media player.</li>
+          </ul>
+        </section>
+
+        <!-- 3. In-App Purchases -->
+        <section class="section">
+          <h2 class="section-title"><span class="section-num">3</span> In-App Donations &amp; Billing</h2>
+          <p>
+            The Application provides users with the option to make voluntary donations to support ongoing independent software development.
+          </p>
+          <ul>
+            <li>All transactions are handled entirely through official <strong>Google Play In-App Billing</strong>.</li>
+            <li>Neither the Application nor the developers ever have access to payment details, credit card numbers, or banking credentials. All transactions are governed by the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--accent-primary);">Google Privacy Policy</a>.</li>
+          </ul>
+        </section>
+
+        <!-- 4. Ads & Tracking -->
+        <section class="section">
+          <h2 class="section-title"><span class="section-num">4</span> Advertising &amp; Tracking</h2>
+          <ul>
+            <li><strong>No Ads:</strong> We do not include third-party ad networks (e.g. AdMob, Unity) or intrusive banners.</li>
+            <li><strong>No Telemetry/Brokering:</strong> We do not sell, rent, or trade any user information to data brokers or advertising partners.</li>
+          </ul>
+        </section>
+
+        <!-- 5. Android Permissions -->
+        <section class="section">
+          <h2 class="section-title"><span class="section-num">5</span> Android Permissions &amp; Technical Necessity</h2>
+          <p>The Application requests only the minimal technical permissions required for core media playback functionality:</p>
+          <ul>
+            <li><span class="code-badge">INTERNET</span>: Necessary to stream and decode audiovisual content requested by the user.</li>
+            <li><span class="code-badge">ACCESS_NETWORK_STATE</span>: Used to verify active network connectivity before initiating playback.</li>
+            <li><span class="code-badge">WAKE_LOCK</span>: Prevents the screen or TV display from sleeping while a video is playing.</li>
+            <li><span class="code-badge">BILLING</span>: Required by Google Play Billing library to support in-app voluntary donations.</li>
+          </ul>
+        </section>
+
+        <!-- 6. Third-Party Services -->
+        <section class="section">
+          <h2 class="section-title"><span class="section-num">6</span> Third-Party Services</h2>
+          <p>
+            When connecting to an IPTV stream via credentials entered by the user, streaming network traffic travels directly between the user's device and the user-specified server. Cucho Studio does not monitor, inspect, or intermediate communications between the user and their IPTV provider.
+          </p>
+        </section>
+
+        <!-- 7. Updates -->
+        <section class="section">
+          <h2 class="section-title"><span class="section-num">7</span> Policy Updates</h2>
+          <p>
+            We may update this Privacy Policy periodically to reflect app updates or Google Play policy compliance requirements. Any revisions will be published immediately on this page with the updated revision date.
+          </p>
+        </section>
+
+        <!-- 8. Developer Contact -->
+        <section class="section">
+          <h2 class="section-title"><span class="section-num">8</span> Developer Contact</h2>
+          <p>If you have any questions or feedback regarding this Privacy Policy:</p>
+          <div class="dev-box">
+            <div class="dev-info">
+              <h4>Cucho Studio • Pablo Miranda</h4>
+              <p>Independent Software Developer</p>
+            </div>
+            <a href="mailto:pablo.mirandac@gmail.com" class="contact-btn">
+              <span>✉️</span> pablo.mirandac@gmail.com
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Cucho Studio / Pablo Miranda. All rights reserved.</p>
+      <p style="margin-top: 6px;">
+        Hosted with GitHub Pages • <a href="https://github.com/pablo2032/v-cucho4" target="_blank" rel="noopener noreferrer">Source Repository</a>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      const contentEs = document.getElementById('content-es');
+      const contentEn = document.getElementById('content-en');
+      const btnEs = document.getElementById('btnEs');
+      const btnEn = document.getElementById('btnEn');
+
+      if (lang === 'en') {
+        contentEs.style.display = 'none';
+        contentEn.style.display = 'block';
+        btnEn.classList.add('active');
+        btnEs.classList.remove('active');
+        document.documentElement.lang = 'en';
+      } else {
+        contentEs.style.display = 'block';
+        contentEn.style.display = 'none';
+        btnEs.classList.add('active');
+        btnEn.classList.remove('active');
+        document.documentElement.lang = 'es';
+      }
+
+      try {
+        localStorage.setItem('cucho_policy_lang', lang);
+      } catch (e) {}
+    }
+
+    // Initialize based on saved preference or browser language
+    (function init() {
+      const saved = localStorage.getItem('cucho_policy_lang');
+      if (saved === 'en' || (!saved && navigator.language && navigator.language.startsWith('en'))) {
+        setLang('en');
+      } else {
+        setLang('es');
+      }
+    })();
+  </script>
+</body>
+</html>
